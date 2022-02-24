@@ -2,6 +2,9 @@
 package designpatternlearning.adapter;
 
 
+/*  This car class does not implement the PriceCalculator interface.
+So when we put it in the showPrice method, we need an Adapter class.
+**/
 public class UKCarPriceCalculator {
     
     private int age;
