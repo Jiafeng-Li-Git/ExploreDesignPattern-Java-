@@ -1,5 +1,5 @@
 
-package designpatternlearning.adapter;
+package designpatternlearning.Adapter;
 
 
 public class TruckPriceCalculator implements PriceCalculator{

@@ -1,6 +1,6 @@
 
 
-package designpatternlearning.adapter;
+package designpatternlearning.Adapter;
 
 public class Main {
     public static void main(String[] args){

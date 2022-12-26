@@ -1,5 +1,5 @@
 
-package designpatternlearning.adapter;
+package designpatternlearning.Adapter;
 
 
 /*  This car class does not implement the PriceCalculator interface.

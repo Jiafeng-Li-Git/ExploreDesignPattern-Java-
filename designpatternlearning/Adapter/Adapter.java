@@ -1,6 +1,6 @@
 
 
-package designpatternlearning.adapter;
+package designpatternlearning.Adapter;
 
 public class Adapter implements PriceCalculator{
     
