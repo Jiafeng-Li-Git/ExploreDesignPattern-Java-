@@ -18,5 +18,11 @@ public class Main {
 		System.out.println("Validating if the string \"STRI123NG\" is all uppercase... " + sver.allUpperCaseValidation("STRI123NG"));
 		System.out.println("Validating if the string \"string\" is all lowercase... " + sver.allLowerCaseValidation("string"));
 		System.out.println("Validating if the string \"string123\" is all uppercase... " + sver.allLowerCaseValidation("STRI123NG"));
+	
+		// Recursion, Hanoi Tower
+		HanoiTower ht = new HanoiTower();
+		System.out.print(ht.move(5, "A", "C", "B", 0));
+	
+	
 	}
 }
