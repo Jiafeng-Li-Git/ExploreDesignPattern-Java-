@@ -21,8 +21,17 @@ public class Main {
 	
 		// Recursion, Hanoi Tower
 		HanoiTower ht = new HanoiTower();
-		System.out.print(ht.move(5, "A", "C", "B", 0));
+		System.out.println(ht.move(5, "A", "C", "B", 0));
 	
-	
+		// Binary Search Tree (Recursive data structure)
+		BinarySearchTree tr = new BinarySearchTree();
+		tr.insertNode(23);
+		tr.insertNode(13);
+		System.out.println(tr.insertNode(17));
+		System.out.println(tr.insertNode(4));
+		tr.insert(25);
+		System.out.println(tr.insertNode(27));
+		//Depth-First
+		tr.depthFirstPrint();
 	}
 }

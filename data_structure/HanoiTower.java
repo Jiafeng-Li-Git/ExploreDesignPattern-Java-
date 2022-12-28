@@ -12,9 +12,6 @@ public class HanoiTower {
 			System.out.println("Move item " + n + " from " + towerFrom + " to " + towerTo);
 			steps = steps + 1 + move(n-1, towerMid, towerTo, towerFrom, 0);
 		}
-		
 		return steps;
 	}
-	
-	
 }
