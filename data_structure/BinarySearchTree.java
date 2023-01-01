@@ -1,4 +1,7 @@
 package data_structure;
+import java.util.LinkedList;
+import java.util.Queue;
+
 
 public class BinarySearchTree {
 	
@@ -65,6 +68,34 @@ public class BinarySearchTree {
 		}
 
 	}
+	
+	
+	public void breadthFirstPrint() {
+		
+		Queue<IntTreeNode> NodeQueue = new LinkedList<IntTreeNode>();
+		IntTreeNode node;
+		
+		if(root == null) {
+			return;
+		}
+		
+		NodeQueue.add(root);
+		
+		while(!NodeQueue.isEmpty()) {
+			node = NodeQueue.poll();
+			System.out.println(node.getVal());
+			
+			if(node.getLeftChild() != null) {
+				NodeQueue.add(node.getLeftChild());
+			}
+			if(node.getRightChild() != null) {
+				NodeQueue.add(node.getRightChild());
+			}
+			
+		}
+		
+	}
+	
 	
 	
 	
