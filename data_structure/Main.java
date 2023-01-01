@@ -32,6 +32,11 @@ public class Main {
 		tr.insert(25);
 		System.out.println(tr.insertNode(27));
 		//Depth-First
+		System.out.println("Depth First Search");
 		tr.depthFirstPrint();
+		//Breadth-First
+		System.out.println("Breadth First Search");
+		tr.breadthFirstPrint();
+		
 	}
 }
