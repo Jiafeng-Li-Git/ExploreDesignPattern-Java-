@@ -1,4 +1,6 @@
 package data_structure;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class IntTreeNode {
 
@@ -54,6 +56,28 @@ public class IntTreeNode {
 				this.getRightChild().insertNode(newNode);
 			}
 		}
+	}
+	
+	public int nodeSum() {
+		int result = 0;
+		Queue<IntTreeNode> NodeQueue = new LinkedList<IntTreeNode>();
+		IntTreeNode node;
+		
+		NodeQueue.add(this);
+		
+		while(!NodeQueue.isEmpty()) {
+			node = NodeQueue.poll();
+			result = result + node.getVal();
+			
+			if(node.getLeftChild() != null) {
+				NodeQueue.add(node.getLeftChild());
+			}
+			if(node.getRightChild() != null) {
+				NodeQueue.add(node.getRightChild());
+			}
+		}
+		
+		return result;
 	}
 	
 }

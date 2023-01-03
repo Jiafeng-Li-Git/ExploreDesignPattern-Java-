@@ -16,4 +16,16 @@ public class StringValidationer {
 	public boolean allLowerCaseValidation(String str) {
 		return str.chars().allMatch(Character::isLowerCase);
 	}
+	
+	public Boolean isPalindrome(String s){
+        StringBuffer sr = new StringBuffer(s);
+        sr.reverse();
+        String newString = new String(sr);
+        Boolean flag = true;
+        if(s.equals(newString)) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

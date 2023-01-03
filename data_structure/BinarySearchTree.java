@@ -15,6 +15,10 @@ public class BinarySearchTree {
 		this.root = root;
 	}
 	
+	public IntTreeNode getRoot() {
+		return this.root;
+	}
+	
 	public void insert(int value) {
 		IntTreeNode newNode = new IntTreeNode(value);
 		if(this.root == null) {
@@ -90,13 +94,7 @@ public class BinarySearchTree {
 			}
 			if(node.getRightChild() != null) {
 				NodeQueue.add(node.getRightChild());
-			}
-			
+			}	
 		}
-		
 	}
-	
-	
-	
-	
 }

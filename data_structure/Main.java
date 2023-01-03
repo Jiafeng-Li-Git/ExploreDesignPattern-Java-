@@ -18,7 +18,9 @@ public class Main {
 		System.out.println("Validating if the string \"STRI123NG\" is all uppercase... " + sver.allUpperCaseValidation("STRI123NG"));
 		System.out.println("Validating if the string \"string\" is all lowercase... " + sver.allLowerCaseValidation("string"));
 		System.out.println("Validating if the string \"string123\" is all uppercase... " + sver.allLowerCaseValidation("STRI123NG"));
-	
+		System.out.println("asdsa " + sver.isPalindrome("asdsa"));
+		
+		
 		// Recursion, Hanoi Tower
 		HanoiTower ht = new HanoiTower();
 		System.out.println(ht.move(5, "A", "C", "B", 0));
@@ -37,6 +39,8 @@ public class Main {
 		//Breadth-First
 		System.out.println("Breadth First Search");
 		tr.breadthFirstPrint();
+		//Sum
+		System.out.println(tr.getRoot().getRightChild().nodeSum());
 		
 	}
 }
