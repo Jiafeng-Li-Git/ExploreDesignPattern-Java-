@@ -8,3 +8,7 @@ Learning module:
 https://www.linkedin.com/learning/java-design-patterns-structural/solution-the-composite-pattern?autoAdvance=true&autoSkip=false&autoplay=true&resume=true
 
 # Explore Data Structure -Java-
+Including Linked List and Binary Search Tree
+
+Learning module:
+https://www.linkedin.com/learning/introduction-to-data-structures-algorithms-in-java/selection-sort?autoplay=true&resume=false
