@@ -3,6 +3,7 @@ package functional_programming;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
@@ -43,6 +44,12 @@ public class Main {
 		.filter(shop -> shop.charAt(0)=='L')
 		.forEach(shop -> System.out.println(shop));
 		System.out.println(shops);
+		
+		List<String> newShops = shops.stream()
+				.sorted()
+				.filter(shop -> shop.charAt(0)=='L')
+				.collect(Collectors.toList());
+		System.out.println(newShops);
 		
 		Stream<String> letterStream = Stream.of("hello", " stream");
 		
